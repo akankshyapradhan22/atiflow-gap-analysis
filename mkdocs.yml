@@ -1,0 +1,48 @@
+site_name: AtiFlow v2.0 — Figma vs App Gap Analysis
+site_description: Screen-by-screen comparison of Figma designs against the live AtiFlow admin app
+site_author: AtiMotors Design & Engineering
+
+theme:
+  name: material
+  palette:
+    primary: teal
+    accent: teal
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - content.tooltips
+    - search.highlight
+
+extra_css:
+  - assets/extra.css
+
+nav:
+  - Home: index.md
+  - "1. Execution Source Config": exec-source-config.md
+  - "2. Device Modals": device-modals.md
+  - "3. Per-Area Nav": per-area-nav.md
+  - "4. Materials Master": materials-master.md
+  - "5. Container Master": container-master.md
+  - "6. Workflow Wizard": workflow-wizard.md
+  - "7. WIP Inventory": wip-inventory.md
+  - "8. Staging Area": staging-area.md
+  - "9. Station Mapping": station-mapping.md
+  - "10. Settings": settings.md
+  - "11. Sidebar": sidebar.md
+  - "Summary": summary.md
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
